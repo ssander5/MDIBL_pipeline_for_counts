@@ -8,8 +8,8 @@
 module load samtools
 module load hisat2
 
-ref=/N/dc2/scratch/ss93/shared_files/mdibl/MDIBL_2018/Reference/dpulex_genome
-splicesites=/N/dc2/scratch/ss93/shared_files/mdibl/MDIBL_2018/Reference/splicesites.txt
+ref=../Reference/dpulex_genome
+splicesites=../Reference/splicesites.txt
 
 stub=
 
