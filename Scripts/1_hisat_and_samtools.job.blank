@@ -18,7 +18,7 @@ right="_R2_001.fastq.gz"
 sam=../Mapping/SamFiles/$stub.sam
 summary=../Mapping/SummaryFiles/$stub.hisat2.summary
 
-hisat2 -p 2 -x $ref --known-splicesite-infile $splicesites -1 $reads$stub$left -2 $reads$stub$right -S $sam --max-intronlen 5000 --new-summary --summary-file $summary
+hisat2 -p 2 -x $ref -1 $reads$stub$left -2 $reads$stub$right -S $sam --max-intronlen 5000 --new-summary --summary-file $summary
 
 samtools sort $sam > ${sam%sam}sort.bam
 samtools index ${sam%sam}sort.bam
