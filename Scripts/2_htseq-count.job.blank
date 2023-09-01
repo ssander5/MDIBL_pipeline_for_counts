@@ -9,3 +9,5 @@ gff=../Reference/dpulex_genes.gff
 
 echo $stub
 htseq-count -f bam -r pos -s no -m intersection-nonempty -t exon -i Parent ../Mapping/SamFiles/$stub.sort.bam $gff > ../Counts/$stub.counts
+
+#for more information about the -m options, please see https://htseq.readthedocs.io/en/release_0.11.1/count.html
