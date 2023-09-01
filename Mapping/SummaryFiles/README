@@ -1,6 +1,6 @@
 Summary files from mapping will appear here.
 
-A couple good summaries to grap!
+A couple good summaries to grep!
 average "overall alignment rate":
 for f in *summary; do cat $f | grep "Overall" | awk '{print $NF}' | sed 's/[()%]//g' ; done | awk 'BEGIN{sum=0}{sum+=$1}END{print sum/NR}' | less
 
