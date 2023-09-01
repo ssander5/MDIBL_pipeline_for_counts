@@ -7,7 +7,6 @@
 module load bio/2.0
 
 ref=../Reference/dpulex_genome
-splicesites=../Reference/splicesites.txt
 
 stub=
 
